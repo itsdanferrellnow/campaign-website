@@ -1,0 +1,94 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title:
+email: ferrellforavl@gmail.com
+description: >-
+  Autistic child thrive in their daily life. Learn a strengths-based approach!
+domain: "https://www.ferrellforavl.com"
+url: https://parents.learnplaythrive.com
+logo: assets/images/logo.svg
+
+social:
+  name: Learn Play Thrive for Parents
+  links:
+    - https://www.facebook.com/learnplaythriveparents
+    - https://www.instagram.com/learnplaythriveparents
+
+nav_items:
+  - name: Platform
+    link: /platform/
+    new_window: false
+    highlight: false
+  - name: About
+    link: /about/
+    new_window: false
+    highlight: false
+  - name: Contact
+    link: /contact/
+    new_window: false
+    highlight: false
+  - name: Volunteer
+    link: /volunteer/
+    new_window: false
+    highlight: false
+  - name: Donate
+    link: /donate/
+    new_window: true
+    highlight: true
+
+land_acknowledgement:
+  We live on the land of the Tsalagi, who have called the Shaconage home before the McDowells, the Pattons, the Chunns, the Reynolds, the Bairds, and the Merrimons. The city was named after Samuel Ashe, govenor of North Carolina, a major slaveowner who defended the right to slavery on the North Carolina Supreme Court. Each one of these families have names that haunt the streets of our city. We honor those who were here first to Togiyasdi, where the Tsalagi raced canoes where the French Broad and Swannanoa Rivers met, who's descendents were forcibly removed from their homes by the same Federal Government that seeks to separate families and destroy communities. We also want to acknowledge how the wealth of Asheville was built on chattel slavery, those families who leveraged brutality, starvation, coercion, and force for their own financial gain. We are committed to working with the Black community in Asheville, and the indigenous people in building collective liberation for all of us.
+sass:
+  sass_dir: _sass
+  load_paths:
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+kramdown:
+  input: Kramdown
+
+whitelist:
+  - jekyll-redirect-from
+
+
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
