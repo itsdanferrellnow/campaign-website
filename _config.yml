@@ -45,10 +45,6 @@ nav_items:
     link: /contact/
     new_window: false
     highlight: false
-  - name: Volunteer
-    link: /volunteer/
-    new_window: false
-    highlight: false
   - name: Donate
     link: /donate/
     new_window: true
