@@ -1,24 +1,24 @@
 <nav class="navbar ffa-navbar navbar-expand-lg navbar-dark bg-brand-color">
-  <div class="container-fluid">
-    <a class="navbar-brand treatment-text logo" href="#">Ferrell For Asheville</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarScroll">
-      <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll ms-auto">
+    <div class="container">
+      <a class="navbar-brand treatment-text logo" href="/">Ferrell For Asheville</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll ms-auto">
 
-        {% assign current_url = page.url | remove: 'index.html' | default: '/' %}
-        {% for item in site.nav_items %}
-        <li class="nav-item {% if item.link == current_url %}active{% endif %}{% if item.highlight %} highlighted-nav-link{% endif %}">
-          <a class="nav-link"
-             href="{{ item.link | relative_url }}"
-             {% if item.new_window %}target="_blank" rel="noopener noreferrer"{% endif %}
-             {% if item.link == current_url %}aria-current="page"{% endif %}>
-            {{ item.name }}
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
+          {% assign current_url = page.url | remove: 'index.html' | default: '/' %}
+          {% for item in site.nav_items %}
+          <li class="nav-item {% if item.link == current_url %}active{% endif %}{% if item.highlight %} highlighted-nav-link{% endif %}">
+            <a class="nav-link"
+               href="{{ item.link | relative_url }}"
+               {% if item.new_window %}target="_blank" rel="noopener noreferrer"{% endif %}
+               {% if item.link == current_url %}aria-current="page"{% endif %}>
+              {{ item.name }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
   </div>
 </nav>
